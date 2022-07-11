@@ -36,6 +36,17 @@ p {
   color: white;
 }
 
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: white;
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -68,4 +79,26 @@ p {
 
 .about-paragraph {
   margin: 10px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .app-titles {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .secondary-link {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    text-align: center;
+  }
 }
